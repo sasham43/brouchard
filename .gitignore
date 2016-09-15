@@ -1,0 +1,4 @@
+node_modules
+DS_Store
+server/public/assets/scripts/client.min.js
+npm-debug.log
