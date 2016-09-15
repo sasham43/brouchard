@@ -1,0 +1,21 @@
+canvas{
+  /*width: 125px;
+  height: 125px;*/
+}
+
+.jumbotron{
+  text-align: center;
+}
+
+.input-container, .output-container{
+  padding: 10px;
+  border: solid 3px #ccc;
+}
+
+.input-container{
+  /*margin-right: .1em;*/
+}
+
+.output-container{
+  /*margin-left: .1em;*/
+}
