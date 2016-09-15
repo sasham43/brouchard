@@ -19,3 +19,7 @@ canvas{
 .output-container{
   /*margin-left: .1em;*/
 }
+
+#input{
+  width: 125px;
+}
