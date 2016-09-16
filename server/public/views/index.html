@@ -28,12 +28,13 @@
       </div>
     </div>
     <div class="row">
+      <form>
+        <input id="image-input" name="image-input" type="file" accept="image/*" /><button ng-click="mc.previewFile()">Set Image</button>
+      </form>
       <div class="text-center col-md-5 col-sm-5 input-container">
         <!-- input -->
         <h3>Input</h3>
-        <form>
-          <input id="image-input" name="image-input" type="file" accept="image/*" /><button ng-click="mc.previewFile()">Set Image</button>
-        </form>
+
         <img id="input" src="./assets/images/chrome.jpg"/>
       </div>
       <div class="text-center col-md-5 col-sm-5 col-md-offset-2 col-sm-offset-2 output-container">

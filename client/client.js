@@ -2,7 +2,7 @@ angular.module('brouchard', []);
 
 // var socket = io();
 
-angular.module('brouchard').controller('MainController', ['$http', function($http){
+angular.module('brouchard').controller('MainController', ['$http', '$interval', function($http, $interval){
   var mc = this;
 
   // file upload
@@ -32,6 +32,8 @@ angular.module('brouchard').controller('MainController', ['$http', function($htt
   var iteration = 0; // ?
   // var to = null; // ?
   var px = null;
+
+  var dynamicRate = null;
 
   var getData = function(imageObj){
     canvas = canvas || document.getElementById('output');
@@ -69,7 +71,8 @@ angular.module('brouchard').controller('MainController', ['$http', function($htt
   };
 
   var paint = function(){
-    console.log('painting...');
+    // console.log('painting...');
+    iteration++;
     var imageData = context.getImageData(0,0,125,125);
     for (var x = 0; x < 125; x++){
       for (var y = 0; y < 125; y++){
@@ -83,6 +86,11 @@ angular.module('brouchard').controller('MainController', ['$http', function($htt
 
     requestAnimationFrame(iterate);
   };
+
+  $interval(function(){
+    // console.log('dynamicRate:', dynamicRate);
+    console.log('iteration:', iteration);
+  }, 3000);
 
   console.log('main controller loaded.');
 }]);
