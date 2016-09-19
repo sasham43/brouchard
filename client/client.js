@@ -87,10 +87,10 @@ angular.module('brouchard').controller('MainController', ['$http', '$interval', 
     requestAnimationFrame(iterate);
   };
 
-  $interval(function(){
-    // console.log('dynamicRate:', dynamicRate);
-    console.log('iteration:', iteration);
-  }, 3000);
+  // $interval(function(){
+  //   // console.log('dynamicRate:', dynamicRate);
+  //   console.log('iteration:', iteration);
+  // }, 3000);
 
   console.log('main controller loaded.');
 }]);
